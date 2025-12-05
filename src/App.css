@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-weight: 600;
+  border-bottom: 1px solid rgb(196, 21, 21);
+margin-bottom: 50px;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  transform: scale(0);
+  animation: zoom-in 1.5s ease forwards;
+}
+
+ul li{
+  margin-right: 50px;
+}
+
+.navbar img {
+  width: 100px;
+  padding-left: 50px;
+}
+
+.btn1{
+  margin-right: 50px;
+  background-color: rgb(196, 21, 21);
+  border:0;
+  color:white;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn1:hover{
+  background-color: transparent;
+  border: rgb(196, 21, 21);
+  color: rgb(196, 21, 21);
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+
+}
+
+.left{
+  margin: left 100px;
+  transform: translateX(-500px);
+  animation: left-right 1.5s ease forwards;
+}
+@keyframes left-right {
+  100%{
+    transform: translateX(0px);
+  }
+}
+.title {
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 1.2;
+
+}
+
+.left p{
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.btns {
+  margin-top: 30px;
+}
+.btn2{
+  margin-right: 50px;
+  background-color: transparent;
+  border:1px solid rgb(196, 21, 21);
+  color:rgb(196, 21, 21);
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn2:hover{
+  background-color: rgb(196, 21, 21);
+  border: none;
+  color: white;
+}
+
+.social {
+  margin-top: 20px;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.social-1{
+  font-size: 19px;
+}
+.social-icons img{
+  width: 40px;
+}
+.right img{
+  width:600px;
+  transform: scale(0);
+  animation: zoom-in 1.5s ease forwards;
+}
+@keyframes zoom-in {
+  100% {
+    transform: scale(1);
+  }
+  
+}
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.menu-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;             /* remove side gaps */
+  margin: 0;
+  background-color: #ffffff;
+}
+.menu-image {
+  width: 100%;
+  max-width: 1000px;     /* 💥 WIDTH LIMIT HERE */
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  margin: 0 auto;         /* center image */
+  display: block;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+.menu-page p{
+  color:red;
+}
+
+.about-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+
+.about-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about-text {
+  flex: 1.2;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-text h2,
+.about-text h3 {
+  margin-top: 20px;
+  color: #ff7a00;
+}
+
+.about-text ul {
+  margin: 10px 0 20px 20px;
+}
+
+/* VIDEO SIDE */
+.about-media {
+  flex: 1;
+}
+
+.about-video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsive */
+@media (max-width: 700px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-media {
+    margin-top: 20px;
+  }
+}
+.contact-page {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px 40px;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* LEFT SIDE INFO */
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ff7a00;
+}
+
+.contact-info p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.contact-detail {
+  margin-bottom: 14px;
+}
+
+.contact-detail h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* RIGHT SIDE FORM */
+.contact-form {
+  flex: 1;
+  background: #ffffff;
+  padding: 24px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff7a00;
+}
+
+/* BUTTON */
+.contact-btn {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: none;
+  background-color: #ff5a1f;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  opacity: 0.9;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    margin-top: 20px;
+  }
+}
+/* AUTH PAGE */
+.auth-page {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 28px 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.auth-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.auth-group input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+}
+
+.auth-group input:focus {
+  border-color: #ff7a00;
+}
+
+.auth-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: none;
+  background-color: #ff5a1f;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  opacity: 0.9;
+}
+
+.auth-toggle-text {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.auth-toggle-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 4px;
+  color: #ff5a1f;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+

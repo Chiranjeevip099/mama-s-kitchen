@@ -2,10 +2,10 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Menu from "./pages/Menu";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Auth from "./pages/auth";   // 👈 Login/Signup page
+import Menu from "./pages/menu.jsx";
+import About from "./pages/about.jsx";
+import Contact from "./pages/contact.jsx";
+import Auth from "./pages/auth.jsx";   // 👈 Login/Signup page
 
 const App = () => {
   return (
